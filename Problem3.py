@@ -1,47 +1,30 @@
 # Euler Project: Problem3.py
+# Status: INCOMPLETE
 
 # The prime factors of 13195 are 5, 7, 13 and 29.
 # What is the largest prime factor of the number 600851475143 ?
 
+# NOOT: This solution is incomplete as I cannot generate primes correctly as of yet.
+
 def main():
 
-    indice = 1
     n = int(input("Please enter an integer: "))
-    actualN = n
 
     prime = []
-    largestPrime = []
 
     # Generates a list of prime numbers up to the input
     isPrime(n, prime)
 
-    # Checks if the prime numbers are divisible by the input
-    for number in prime:
-        if (number % n == 0):
-            n = number / n
-        largestPrime.append(number)
-
-    ############################################################################
-    print("This is the list of primes that actually work: ", largestPrime)
-    ############################################################################
-
-    numberOfElements = len(largestPrime)
-
-    if (numberOfElements == 2): # If the input is a prime itself
-        print("The prime factor of", actualN, "is 1 and", str(actualN) + ".")
+    if (len(prime) == 0): # If the input is a prime itself
+        print("The largest prime factor of", n, "is", str(n) + ".")
     else:
-        largestPrime.remove(1) # Remove 1 and itself because the input is not prime
-        largestPrime.pop()
-        print("The prime factors of", actualN, "are")
-        while (indice < numberOfElements):
-            print("," + str(largestPrime[indice]))
-            indice += 1
-        print(".")
+        largestPrimeFactor = str(prime.pop())
+        print("The largest prime factor of", n, "is", largestPrimeFactor + ".")
 
 def isPrime(n, prime):
-    # Generates all the prime numbers up to and including n
+    # Generates all the prime numbers up to n
 
-    for number in range(1, n + 1):
+    for number in range(3, n, 2):
         if (n % number == 0):
             prime.append(number)
 
