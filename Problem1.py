@@ -4,8 +4,6 @@
 # get 3, 5, 6 and 9. The sum of these multiples is 23.
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-import sys
-
 def main():
 
     multipleOf3 = 0
@@ -19,6 +17,7 @@ def main():
     for naturalNumber in range(1, n):
         multipleOf3 = naturalNumber / 3
         multipleOf5 = naturalNumber / 5
+
         if (multipleOf3 % 1 == 0) or (multipleOf5 % 1 == 0):
             # Checks if the naturalNumber is an integer
             listOfValidNumber.append(naturalNumber)
