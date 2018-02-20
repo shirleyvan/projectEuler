@@ -1,4 +1,6 @@
 # projectEuler
-Project Euler (https://projecteuler.net/about) allows me to combine my passion for mathematics and computing science by challenging me to solve the problems listed on the website. 
+projectEuler contains my progression in using mathematics and computing science to solve problems from Project Euler. Initially meant as an exercise to brush up my Python and logical process, I began working on Project Euler problems on the side to keep challenging myself in both disciplines.
 
-This repository contains complete and incomplete solutions of the problems and will be completed in multiple programming languages.
+This repository contains complete and incomplete solutions of the problems and will be hopefully completed in multiple programming languages.
+
+For more information about Project Euler, please visit this website: https://projecteuler.net/about.
